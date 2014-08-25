@@ -74,7 +74,10 @@ class RunChromeAppView extends View
 
               # Path to the Chrome.exe, this varies depending on OS and other factors.
               # FIX: Find a good way to find the right path.
-              chromePath = process.env['LOCALAPPDATA'] + '\\Google\\Chrome SxS\\Application\\chrome.exe'
+              #chromePath = process.env['LOCALAPPDATA'] + '\\Google\\Chrome SxS\\Application\\chrome.exe'
+
+              # Path for a clean Windows 8.1 machine with main Chrome channel.
+              chromePath = 'C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe'
 
               # Execute the Chrome.exe with the launch command of the path where we found the manifest.json.
               exec chromePath , ['--load-and-launch-app=' + path]
