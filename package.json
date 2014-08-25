@@ -1,0 +1,20 @@
+{
+  "name": "run-chrome-app",
+  "main": "./lib/run-chrome-app",
+  "version": "0.0.1",
+  "description": "Launch Chrome Apps from Atom Editor",
+  "activationEvents": ["run-chrome-app:toggle", "run-chrome-app:run", "run-chrome-app:open"],
+  "repository": "https://github.com/atom/run-chrome-app",
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "dependencies": {
+   "fs-plus": "2.x",
+    "humanize-plus": "~1.4.2",
+    "minimatch": "~0.3.0",
+    "temp": "~0.6.0",
+    "underscore-plus": "1.x",
+    "wrench": "^1.5"
+  }
+}

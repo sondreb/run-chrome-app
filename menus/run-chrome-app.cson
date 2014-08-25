@@ -1,0 +1,25 @@
+# See https://atom.io/docs/latest/creating-a-package#menus for more details
+'context-menu':
+  '.workspace':
+    #'Run': 'run-chrome-app:run'
+    #'Separator': '-'
+    'Chrome App':
+      'Run': 'run-chrome-app:run'
+      #'Another Separator': '-'
+      'Open Manifest': 'run-chrome-app:open'
+  #'.overlayer':
+      #'Enable run-chrome-app': 'run-chrome-app:toggle'
+
+
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'Chrome App'
+      'submenu': [
+        { 'label': 'Run', 'command': 'run-chrome-app:run' }
+        { 'label': 'Open Manifest', 'command': 'run-chrome-app:open' }
+      ]
+    ]
+  }
+]
